@@ -1,10 +1,10 @@
 /* external css */
 
 /* universal style */
-* {
-  /* text-decoration: underline; */
-  /* border-top: 3px solid #f00; */
-}
+/* * {
+  text-decoration: underline;
+  border-top: 3px solid #f00;
+} */
 body {
   font-family: sans-serif;
   color: #444;
