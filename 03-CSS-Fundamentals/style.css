@@ -1,0 +1,177 @@
+/* external css */
+
+/* universal style */
+* {
+  /* text-decoration: underline; */
+  /* border-top: 3px solid #f00; */
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+}
+/* all above tags inherited from body tag since they are all inside body tag */
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+} */
+
+/* these above would override the values of inherited style (body tag) */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22x;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 14px;
+}
+
+/* footer p {
+  font-size: 14px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* id //use once */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 14;
+}
+
+/* class */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px dashed #1098ad;
+  /* border-top: 5px dashed #1098ad; */
+}
+
+/* Pseudo class */
+/* to do manually (style first element of list) */
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(odd) {
+  color: blue;
+} */
+
+/* misconception: this wont work
+--> it would change text to yellow if p is the first child of article (indeed first child is a header tag) */
+article p:first-child {
+  color: yellow;
+}
+
+/* styling hyperlinks
+  -> only applied to a link inside an <a> tag
+  order: LVHA ()
+*/
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f3c7c7;
+  color: #1098ad;
+}
+
+a:hover {
+  font-weight: bold;
+  color: orange;
+  text-decoration: underline wavy;
+}
+
+a:active {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* 
+  PRIORITY:
+  1. Declaration marked !important (not recommeded)
+  2. inline style (style attribute in html)
+  3. ID (#) selector
+  4. Class (.) or pseudo class (:) selector
+  5. Element seletor (p, h1, div, li, etc)
+  6. Universal selector (*)
+  IF a tag is under 2 styles of same priority: the last would be applied
+*/
+
+/* resolving conflicts
+  (hover to know priority) */
+
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+p {
+  color: green !important;
+} */
