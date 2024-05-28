@@ -1,16 +1,38 @@
 /* external css */
 
 /* universal style */
-/* * {
-  text-decoration: underline;
-  border-top: 3px solid #f00;
-} */
+* {
+  /* text-decoration: underline;
+  border-top: 3px solid #f00; */
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
 }
+
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
 /* all above tags inherited from body tag since they are all inside body tag */
+/* inherited rule only applied to text, others like border... are not inherited */
 /* h1,
 h2,
 h3,
@@ -36,10 +58,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -51,10 +75,22 @@ h4 {
 p {
   font-size: 22x;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 14px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -87,12 +123,15 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  height: 80px;
 }
 
 aside {
   background-color: #f7f7f7;
   border: 5px dashed #1098ad;
   /* border-top: 5px dashed #1098ad; */
+  padding: 50px 0px;
+  width: 500px;
 }
 
 /* Pseudo class */
@@ -147,6 +186,12 @@ a:hover {
 a:active {
   background-color: yellow;
   font-weight: bold;
+}
+
+.post-image {
+  /* 100% of the parent container */
+  width: 100%;
+  height: auto;
 }
 
 /* 
