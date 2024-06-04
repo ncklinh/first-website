@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+  position: relative;
+}
+
+.sale {
+  padding: 7px 15px;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  left: -35px;
+  top: -20px;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  font-size: 12;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 20px;
+}
+.container {
+  width: 825px;
+  margin: 50px auto;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.detail-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.detail-list {
+  list-style: square;
+  margin-left: 30px;
+}
+
+.detail-list li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+}
+.container {
+  float: left;
+}
+.prod-info {
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  /* font-size: 12; */
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: #777;
+}
+
+.container {
+  display: flex;
+  justify-self: flex-start;
+  gap: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.prod-info {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.prod-details {
+  margin-top: 0px;
+  flex: 1;
+}
+
+.detail-title {
+  margin-top: 20px;
+}
