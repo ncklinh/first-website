@@ -168,12 +168,16 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .product-colors {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
+}
+
+.product-description {
+  margin-bottom: 7px;
 }
 
 .prod-details {
@@ -183,4 +187,5 @@ h2 {
 
 .detail-title {
   margin-top: 20px;
+  margin-bottom: 15px;
 }
