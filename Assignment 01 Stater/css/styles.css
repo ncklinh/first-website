@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -10,6 +11,24 @@ h1 {
 
 h2 {
   margin-bottom: 8px;
+}
+
+pre {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+ol {
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .cv-document {
@@ -62,10 +81,54 @@ h2 {
 }
 
 .section {
+  padding: 15px 0px;
+}
+
+.section-title {
   text-transform: uppercase;
   font-weight: bold;
   border-bottom: 1px solid black;
-  
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.section-content {
+  font-weight: normal;
+  text-transform: none;
+}
+
+.row-detail {
+  display: flex;
+  border-bottom: 1px dotted black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.row-label {
+  flex-shrink: 0;
+  flex-basis: 30%;
+}
+/* .row-content {
+  width: 70%;
+} */
+.bold {
+  font-weight: bold;
+}
+
+.detail-title {
+  font-weight: bold;
+}
+.detail-content {
+  white-space: pre-line;
+}
+
+.item-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 #overall {
